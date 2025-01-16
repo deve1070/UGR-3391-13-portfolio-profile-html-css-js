@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #8086A6;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #005959;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004747;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    text-align: center;
+    color: #005959;
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Projects Section */
+.project {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #333;
+}
+
+.project video {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.project a.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #005959;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project a.btn:hover {
+    background-color: #004747;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #8086A6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+footer address a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer div img {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer div img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+}

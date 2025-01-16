@@ -1,0 +1,300 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top container styling */
+.top-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #8086A6;
+    padding: 20px;
+    height: auto;
+}
+
+/* Top section styling */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+/* Logo styling */
+.logo img {
+    height: auto;
+    width: 230px;
+    max-width: 100%;
+    margin-left: 80px;
+}
+
+/* Social media container styling */
+.social-media {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+}
+
+/* Social media icons styling */
+.social-media img {
+    border: 10px;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Header and navigation styling */
+header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    width: 104px;
+    height: 43px;
+    color: #fff;
+    background-color: #008080;
+    padding: 10px 20px;
+    margin-right: 26px;
+    border: 1px black solid;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005959;
+    transform: scale(1.1);
+    color: #e0f7fa;
+}
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E4E6F0;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.card-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+section {
+    flex: 1;
+    margin: 10px 15px;
+    max-width: 400px;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #8086A6;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Social Media Container */
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* Social Media Icons */
+footer div a img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+#mobile-nav {
+    display: none;
+    background-color: #8086A6;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1024px) {
+   
+    .top .social-media {
+        display: none;
+    }
+
+    
+    footer {
+        width: 100%; 
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #8086A6;
+        padding: 10px 20px;
+        height: 70px;
+        left: 32px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    /* Logo Styling */
+    .logo img {
+        height: 70px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .top-container {
+        overflow-x: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container {
+        max-width: 100%;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .card-container > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    /* Hamburger Menu for Mobile */
+    .hamburger-menu {
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        margin-top: 0px;
+        margin-left: auto;
+        display: flex; 
+        margin-right: 48px;
+        height: 100px;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+    }
+
+    /* Mobile Navigation Menu */
+    #mobile-nav {
+        display: none;
+        background-color: #8086A6;
+        position: absolute;
+        top: 220px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mobile Menu Links */
+    #mobile-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    #mobile-nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    #mobile-nav ul li a:hover {
+        color: #e0f7fa;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .active #mobile-nav {
+        display: block;
+    }
+
+    
+    footer {
+        width: 100%; 
+        padding: 20px 0;
+    }
+}
