@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Trigger download when the Download CV button is clicked
     downloadButton.addEventListener('click', function() {
         // Provide the path to your CV file here
-        const cvFilePath = '/path/to/your/cv.pdf'; // Update this path
+        const cvFilePath = '/home/dawit/portfoilo/UGR-3391-13-portfolio-profile-html-css-js/assets/docs/dawit_cv.pdf'; // Update this path
         const a = document.createElement('a');
         a.href = cvFilePath;
         a.download = 'Dawit_Kassa_CV.pdf'; // The name of the downloaded file

@@ -23,32 +23,15 @@ body {
 }
 
 /* Logo styling */
-.logo img {
+#logo img {
     height: auto;
-    width: 230px;
+    width: 50px;
     max-width: 100%;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 /* Social media container styling */
-.social-media {
-    margin-top: 0;
-    display: flex;
-    gap: 20px;
-    margin-right: 100px;
-}
 
-/* Social media icons styling */
-.social-media img {
-    border: 10px;
-    height: 35px;
-    width: 35px;
-    transition: transform 0.3s ease;
-}
-
-.social-media img:hover {
-    transform: scale(1.1);
-}
 
 /* Header and navigation styling */
 header {
@@ -297,4 +280,23 @@ footer div a img {
         width: 100%; 
         padding: 20px 0;
     }
+}
+
+.social-media {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+}
+
+/* Social media icons styling */
+.social-media img {
+    border: 10px;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
 }
