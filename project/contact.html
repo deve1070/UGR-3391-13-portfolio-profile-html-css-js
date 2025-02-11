@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="/UGR-3391-13-portfolio-profile-html-css-js/css/contact.css">
 </head>
 <body>
-    <div><img src="images/logo.png" alt="logo"></div>
-    <div>
-        <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png" alt="Facebook account" ></i></a>
-        <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank"><img src="images/telegram.png" alt="Telegram account" ></a>
-        <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?"><img src="images/linkedin.png" alt="linkedin account" ></a>
-        <a href="https://www.github.com/deve1070" target="_blank"><img src="images/github.png" alt="visit github account"></a>
+    <!-- Top Bar with Logo and Social Media -->
+    <div class="top-container">
+        <div class="top">
+            <div class="logo">
+                <img src="/UGR-3391-13-portfolio-profile-html-css-js/images/logo.png" alt="Logo">
+            </div>    
+            <div class="social-media">
+                <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
+                    <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/facebook.png" alt="Facebook account">
+                </a>
+                <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
+                    <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/telegram.png" alt="Telegram account">
+                </a>
+                <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
+                    <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/linkedin.png" alt="LinkedIn account">
+                </a>
+                <a href="https://www.github.com/deve1070" target="_blank">
+                    <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/github.png" alt="GitHub account">
+                </a>
+            </div>
+        </div>
     </div>
 
+    <!-- Navigation -->
     <header>
         <nav>
             <ul>
@@ -26,20 +42,23 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contact Information -->
     <address>
         Dawit Kassa<br>
         Algeria Street<br>
-        Arada,Addis Ababa<br>
+        Arada, Addis Ababa<br>
         Ethiopia<br>
         <a href="tel:+251986043095">+2 (519) 860-3095</a><br>
-        <a href="mailto:dkassa253@gmail.com">dkassa253@gmail.com </a>
+        <a href="mailto:dkassa253@gmail.com">dkassa253@gmail.com</a>
     </address>
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="POST">
 
+    <!-- Contact Form -->
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="POST">
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter Your full name">
-        
+        <input type="text" id="name" name="name" placeholder="Enter your full name">
+
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
@@ -48,25 +67,32 @@
 
         <label for="message">Message:</label>
         <textarea name="message" id="message" rows="5" placeholder="Write your message here" required></textarea>
-        
-        <label for="phone"> Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone Number">
 
-        <button type="submit" >Send message</button>
-</form>
-<footer>
-    <div>
-        <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
-        <img src="images/facebook.png" alt="Facebook account" ></i></a>
-        <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
-        <img src="images/telegram.png" alt="Telegram account" ></a>
-        <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
-        <img src="images/linkedin.png" alt="linkedin account" ></a>
-        <a href="https://www.github.com/deve1070" target="_blank">
-        <img src="images/github.png" alt="visit github account"></a>
-    </div>
-    <p>&copy; 2024 Dawit. All rights reserved.</p>
-</footer>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
+                <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/facebook.png" alt="Facebook account">
+            </a>
+            <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
+                <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/telegram.png" alt="Telegram account">
+            </a>
+            <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
+                <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/linkedin.png" alt="LinkedIn account">
+            </a>
+            <a href="https://www.github.com/deve1070" target="_blank">
+                <img src="/UGR-3391-13-portfolio-profile-html-css-js/assets/icons/github.png" alt="GitHub account">
+            </a>
+        </div>
+        <p>&copy; 2024 Dawit. All rights reserved.</p>
+    </footer>
+
+    <script src="/UGR-3391-13-portfolio-profile-html-css-js/js/contact.js"></script>
 </body>
-<script src="/UGR-3391-13-portfolio-profile-html-css-js/js/contact.js"></script>
 </html>

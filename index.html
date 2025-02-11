@@ -4,57 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dawit's Personal Profile </title>
-    <link rel="stylesheet" href="/UGR-3391-13-portfolio-profile-html-css-js/css/home.css">
+    <link rel="stylesheet" href="./css/home.css">
     
 </head>
 <body>
-    <div><img src="images/logo.png" alt="logo"></div>
-    <div>
-        <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
-            <img src="images/facebook.png" alt="Facebook account"></i></a>
-        <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
-            <img src="images/telegram.png" alt="Telegram account" ></a>
-        <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
-            <img src="images/linkedin.png" alt="linkedin account" ></a>
-        <a href="https://www.github.com/deve1070" target="_blank">
-            <img src="images/github.png" alt="visit github account"></a>
-    </div>
-    <header>
+    <div class="top-container">
+        <div class="top">
+    <div class="logo"><img src="./images/logo.png" alt="logo" ></div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook account" border: 10px solid></i></a>
+        <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?"><img src="./assets/icons/linkedin.png" alt="linkedin account" ></a>
+        <a href="https://www.github.com/deve1070" target="_blank"><img src="./assets/icons/github.png" alt="visit github account" ></a>
+        <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank"><img src="./assets/icons/telegram.png" alt="Telegram account"></a>
+</div>
+   </div>
+   <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="/UGR-3391-13-portfolio-profile-html-css-js/project/about.html">About</a></li>
-                <li><a href="/UGR-3391-13-portfolio-profile-html-css-js/project/projects.html">Projects</a></li>
-                <li><a href="/UGR-3391-13-portfolio-profile-html-css-js//project/skill.html">Skills</a></li>
-                <li><a href="/UGR-3391-13-portfolio-profile-html-css-js/project/services.html">Services</a></li>
-                <li><a href="/UGR-3391-13-portfolio-profile-html-css-js/project/contact.html">Contact</a></li>
+                <a href="/UGR-3391-13-portfolio-profile-html-css-js/project/about.html">About</a>
+                <a href="/UGR-3391-13-portfolio-profile-html-css-js/project/projects.html">Projec</a>  
+  
+
+                <li><a href="./project/about.html" >About</a></li>                 
+                <li><a href="./project/projects.html">Projects</a></li>
+                <li><a href="./project/services.html">Services</a></li>
+                <li><a href="./project/skill.html">Skills</a></li>
+                <li><a href="./project/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="images/image1.jpg" alt="Personal photo">
-        <p>
+
+    <section class="intro">
+        <div>
+        <img src="images/image1.jpg" alt="Personal photo" class="image1">
+    </div>
+    <div class="intro-text">
+      
         <h1>Hello, I'm Dawit 👋</h1>
         <h2>Software Engineer | Problem Solver | Tech Enthusiast</h2>
         <p>I specialize in building efficient, scalable, and user-focused software solutions.</p>
-            <a href="contact.html">Get in Touch</a>
+            <a href="./project/contact.html " class="button">Get in Touch  </a>
         </p>
+    </div>
+   
     </section>
-    <a href="about.html">About</a>
-    <section>
+</div>
+<div class="display-flex">
+<div class="body1">
+    <a href="/UGR-3391-13-portfolio-profile-html-css-js/project/about.html" class="about">About</a>  
+    <img src="images/image2.jpg" alt="image" class="image2">
+</div>
+
+  
+       
+    <div class="body1">
         <p>
-            <img src="images/image2.jpg" alt="image" size>
+            
             I'm a passionate software engineer with experience in developing web and mobile applications, 
             solving challenging problems, and continuously learning about the latest technologies. 
             I have expertise in <strong>Python, Django, React, and cloud platforms</strong>. My goal is to create 
             solutions that make a difference.
         </p>
-
-    </section>
-    <section>
-        <h2>Featured Projects</h2>
-        <a href="projects.html">View My Work</a>
+    </div>
+   
+</div>
+    <section class="services">
+        
         <div class="project">
+            <h2>Featured Projects</h2>
+        <a href="proje">View My Work</a>
             <h3>Learing Log</h3>
             <video controls width="400">
                 <source src="images/demo2.mp4" type="video/mp4">
@@ -75,36 +94,35 @@
             <p>Kebele Management System is a web-based application designed to streamline the 
                 administrative processes of Kebele, the lowest administrative structure in Ethiopia.
                  This system enables Kebele officials to efficiently store and manage resident data, 
-                 post news and events, and oversee service applications. Residents can create profiles, 
-                 access updates, and apply for essential services such as ID issuance, supportive letters,
-                  and certificates for marriage, birth, or death. The platform enhances transparency, 
-                  accessibility, and efficiency in Kebele administration.
-                </p>
-            <a href="https://github.com/deve1070/kebele_management_system" class="btn">Source Code</a>
-            <a href="projects.html">More...</a>
-        </div>
-    </section>
+                 post news and events, and oversee service applications. Residents can create profiles,access updates, and apply for essential services such as ID issuance, supportive letters,
+                 and certificates for marriage, birth, or death. The platform enhances transparency, 
+                 accessibility, and efficiency in Kebele administration.
+               </p>
+           <a href="https://github.com/deve1070/kebele_management_system" class="btn">Source Code</a>
+           <a href="projects.html">More...</a>
+       </div>
+   </section>
 </body>
 <footer> 
-    <address>
-        Dawit Kassa<br>
-        Algeria Street<br>
-        Arada,Addis Ababa<br>
-        Ethiopia<br>
-        <a href="tel:+251986043095">+2 (519) 860-3095</a><br>
-        <a href="mailto:dkassa253@gmail.com">dkassa253@gmail.com </a>
-    </address>
-    <div>
-        <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
-        <img src="images/facebook.png" alt="Facebook account" ></i></a>
-        <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
-        <img src="images/telegram.png" alt="Telegram account" ></a>
-        <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
-        <img src="images/linkedin.png" alt="linkedin account" ></a>
-        <a href="https://www.github.com/deve1070" target="_blank">
-        <img src="images/github.png" alt="visit github account"></a>
-    </div>
-    <p>&copy; 2024 Dawit. All rights reserved.</p>
+   <address>
+       Dawit Kassa<br>
+       Algeria Street<br>
+       Arada,Addis Ababa<br>
+       Ethiopia<br>
+       <a href="tel:+251986043095">+2 (519) 860-3095</a><br>
+       <a href="mailto:dkassa253@gmail.com">dkassa253@gmail.com </a>
+   </address>
+   <div>
+       <a href="https://www.facebook.com/dawit.mekonnenkassa?mibextid=ZbWKwL" target="_blank">
+       <img src="./assets/icons/facebook.png" alt="Facebook account" ></i></a>
+       <a href="https://www.telegram.com/t.me/Dawit_Kassa" target="_blank">
+       <img src="./assets/icons/telegram.png" alt="Telegram account" ></a>
+       <a href="https://www.linkedin.com/in/dawit-kassa-5a2507244?">
+       <img src="./assets/icons/linkedin.png" alt="linkedin account" ></a>
+       <a href="https://www.github.com/deve1070" target="_blank">
+       <img src="./assets/icons/github.png" alt="visit github account"></a>
+   </div>
+   <p>&copy; 2024 Dawit. All rights reserved.</p>
 </footer>
 <script src="/UGR-3391-13-portfolio-profile-html-css-js/js/home.js"></script>
 </html>
